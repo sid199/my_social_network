@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<h1>Following</h1>
+
+{% if fo_lis %} 
+    <ul>
+       {% for i in fo_lis %} 
+       <li>
+         {{ i.to_user.username }}
+       </li> 
+       {% endfor %} 
+    </ul> 
+  {% else %} 
+  	Sorry,not following anyone at the moment.
+  {% endif %} 
+
+{% endblock %}

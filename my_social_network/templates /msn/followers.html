@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<h1>Followers</h1>
+
+{% if f_lis %} 
+    <ul>
+       {% for i in f_lis %} 
+       <li>
+         {{ i.from_user.username }}
+       </li> 
+       {% endfor %} 
+    </ul> 
+  {% else %} 
+  	Sorry, no followers at the moment. 
+  {% endif %} 
+
+{% endblock %}

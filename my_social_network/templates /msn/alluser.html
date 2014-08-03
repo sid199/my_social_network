@@ -1,0 +1,16 @@
+{% extends 'base.html' %} 
+{% block content %} 
+<h1>All Users</h1>
+{% if lis %} 
+     <ul>
+       {% for i in lis %} 
+       <li>
+         {{ i }}
+       </li> 
+       {% endfor %} 
+    </ul> 
+  {% else %} 
+  	NO USER LINKS AVAILABLE
+  {% endif %} 
+
+{% endblock %}
